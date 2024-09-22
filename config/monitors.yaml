@@ -1,0 +1,26 @@
+- name: Homepage
+  description: Dashboard for services
+  tag: homepage
+  api:
+    method: GET
+    url: https://home.jojonosaur.us/
+
+- name: Svelte Website
+  description: Cybernetically enhanced web apps
+  tag: "svelte-website"
+  api:
+      method: GET
+      url: https://svelte.dev/
+  image: "/svelte.svg"
+- name: Earth
+  description: Our blue planet
+  tag: "earth"
+  defaultStatus: "UP"
+  image: "/earth.png"
+
+- name: IBM Server
+  description: Linux Server Nginx
+  tag: "ibm"
+  api:
+      method: GET
+      url: https://ibm.jojonosaur.us/
