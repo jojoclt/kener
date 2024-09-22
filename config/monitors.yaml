@@ -24,3 +24,12 @@
   api:
       method: GET
       url: https://ibm.jojonosaur.us/
+
+# - name: Github Issues
+#   description: Github Issues Fetch
+#   tag: "ibm"
+#   api:
+#       method: GET
+#       url: https://api.github.com/repos/jojoclt/kener/issues
+#       headers:
+#         Authorization: Bearer ${{project.GH_TOKEN}}
