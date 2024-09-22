@@ -4,6 +4,7 @@
   api:
     method: GET
     url: https://home.jojonosaur.us/
+  image: "/home.png"
 
 - name: Svelte Website
   description: Cybernetically enhanced web apps
@@ -12,6 +13,7 @@
       method: GET
       url: https://svelte.dev/
   image: "/svelte.svg"
+
 - name: Earth
   description: Our blue planet
   tag: "earth"
@@ -24,12 +26,5 @@
   api:
       method: GET
       url: https://ibm.jojonosaur.us/
-
-# - name: Github Issues
-#   description: Github Issues Fetch
-#   tag: "ibm"
-#   api:
-#       method: GET
-#       url: https://api.github.com/repos/jojoclt/kener/issues
-#       headers:
-#         Authorization: Bearer ${{project.GH_TOKEN}}
+  image: "/cloud.png"
+  

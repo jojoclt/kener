@@ -11,8 +11,8 @@ services:
 
       # If running on a LINUX HOST and not podman rootless these MUST BE SET
       # run "id $user" from command line and replace numbers below with output from command
-      #- PUID=1000 # gid
-      #- PGID=1000 # uid
+      # - PUID=1000 # gid
+      # - PGID=1000 # uid
 
       ### Most likely DO NOT need to change anything below this ###
 
@@ -21,11 +21,12 @@ services:
       ### If any of the below are changed make sure the bound volume is correct as well ###
       - CONFIG_DIR=/config
       - PUBLIC_KENER_FOLDER=/config/static
-      - MONITOR_YAML_PATH=/config/monitors.yaml
-      - SITE_YAML_PATH=/config/site.yaml
-      - KENER_BASE_PATH=/status
+      # - MONITOR_YAML_PATH=/config/monitors.yaml
+      # - SITE_YAML_PATH=/config/site.yaml
+      # - KENER_BASE_PATH=/status
 
     ports:
       - '3000:3000/tcp'
     volumes:
       - './config:/config:rw'
+      - './static:/app/build/client:ro'
